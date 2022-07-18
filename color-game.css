@@ -1,0 +1,176 @@
+body {
+  background-color: #EEE2DC;
+}
+
+.flex-container{
+  display: inline-block;           
+  justify-content: left ;    /* Center Horizontally */
+}
+
+.redball{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;         /* Turns a square into a circle  */
+  background-color: #FF5722;  /* Sets color to Red */
+  animation: redbounce 1s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  position: relative;
+}
+
+@keyframes redbounce {
+  from { transform: translate3d(600px, 0, 0);     }
+  to   { transform: translate3d(600px, 300px, 0); }
+}
+
+
+.greenball{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;         /* Turns a square into a circle  */
+  background-color: #26734d;  /* Sets color to green  */
+  animation: greenbounce 1.25s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  position: relative;
+}
+
+@keyframes greenbounce {
+  from { transform: translate3d(700px, 0, 0);     }
+  to   { transform: translate3d(700px, 300px, 0); }
+}
+
+.blueball{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;         /* Turns a square into a circle  */
+  background-color: #000080;  /* Sets color to Blue  */
+  animation: bluebounce 1.5s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  position: relative;
+}
+
+@keyframes bluebounce {
+  from { transform: translate3d(650px, 0, 0);     }
+  to   { transform: translate3d(650px, 300px, 0); }
+}
+
+/*tranformation from bounce to move*/
+.move_redball{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;         /* Turns a square into a circle  */
+  *background-color: #FF5722;  /* Sets color to Red  */
+  animation: move_red 3s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  position: relative;
+}
+
+@keyframes move_red {
+  0%   {left: 300px; top: 150px; }
+  100%  {left: 1100px; top: 150px;}
+}
+
+.move_blueball{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;         /* Turns a square into a circle  */
+  background-color: #000080;  /* Sets color to Blue */
+  animation: move_blue 4s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  position: relative;
+}
+
+@keyframes move_blue {
+  0%   { left: 300px; top: 150px; }
+  100%  { left: 1100px; top: 150px;}
+}
+
+.move_greenball{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;         /* Turns a square into a circle  */
+  /*background-color: #26734d;  /* Sets color to Green  */
+  animation: move_green 2.5s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  position: relative;
+}
+
+@keyframes move_green {
+  0%   {left: 300px; top: 150px; }
+  100%  {left: 1100px; top: 150px;}
+}
+
+.btn{
+  width: 200px;
+  height: 50px;
+  border: 1px solid #273746 ;
+  border-radius: 50px;
+  background-color: #DC7633;
+  color: #212F3C;
+  margin-bottom: 3px;
+  font-family: "Courier New", monospace;
+  font-size: 16px;
+}
+
+.container{
+  width: 200px;
+  height: 180px;
+  position: absolute;
+  border: none;
+  /*border-radius: 5px;
+  background-color: #EDF3F8;*/
+  margin: 10px;
+  padding: 1px;
+}
+
+.pos-center{
+  padding: 2px;
+  margin-top: 15px;
+}
+
+.Play{
+  display: inline-block;
+  width: 200px;
+  height: 50px;
+  border: 1px solid whitesmoke;
+  border-radius: 50px;
+  background-color: #173262;
+  color: whitesmoke;
+  margin: 10px;
+}
+
+#start{
+  font-family: "Courier New", monospace;
+}
+
+.aboutgame{
+  display: inline-block;
+  width: 200px;
+  height: 50px;
+  border: 1px solid whitesmoke;
+  border-radius: 50px;
+  background-color: #173262;
+  color: whitesmoke;
+  font-family: "Courier New", monospace;
+  margin: 10px;
+}
+.hide{
+  display: none;
+  width: 400px;
+  height: 50px;
+  border: 1px solid whitesmoke;
+  border-radius: 50px;
+  background-color: #173262;
+  color: whitesmoke;
+  font-family: "Courier New", monospace;
+}
+
+.aboutgame:hover + .hide{
+  display: inline-block;
+  background-color: #008CBA;
+}
